@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云睐</title>
+    <script src="./lib/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./lib/css/swiper.min.css">
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/public/reset_default.css">
+    <link rel="stylesheet" href="./css/public/header-footer.css">
+    <link rel="stylesheet" href="./css/home-index.css">
+    <link rel="stylesheet" href="./css/public/backTop_shoppingCart.css">
+    <link rel="stylesheet" type="text/css" href="./css/public/collpase-panel.css" />
+</head>
+
+<body>
+    <!--container  -->
+    <div class="container-wrap">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header clearfix">
+                    <div class="navbar-brand">
+                        <a href="home.html">
+                            <img src="./images/home/logo.png" alt="">
+                            <img src="./images/home/Desktop-HD.png" alt="">
+                        </a>
+                    </div>
+                    <div class="dropdown personal">
+                        <button class="btn dropdown-toggle" type="button" id="dropMenuEvent">
+                            <img src="./images/home/wode.png" alt="">
+                        </button>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">注册</a></li>
+                            <li><a href="#">登录</a></li>
+                        </ul> -->
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed btn-menu" data-toggle="" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!--<img src="./images/home/menu.png" alt="">-->
+                    </button>
+                </div>
+                <!-- 未登陆、注册态 -->
+                <ul class="dropdownMenu hidden">
+                    <li><a href="register.html">注册</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+                <!-- 登陆、注册态 -->
+                <div class="downMenu hidden">
+                    <div class="personlCenter">
+                        <div>个人中心</div>
+                        <div>&gt;</div>
+                    </div>
+                    <div class="loginInfo">
+                        <div class="loginImage">
+                            <img src="./images/home/people-2-个人.png" alt="">
+                        </div>
+                        <div class="loginAcount">
+                            102137862@qq.com
+                        </div>
+                        <div class="ExitLogin">注销</div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+            <div id="panelFlag" class="flag horizontal hidden">
+                <div class="panelWrapper panelBorder panelLine">
+                    <ul>
+                        <li class="inputBar">
+                            <input type="text" placeholder="搜索">
+                            <div class="search">
+                                <img src="./images/home/search (2).png" alt="">
+                            </div>
+                        </li>
+                        <li><a class="text-primary">合作伙伴</a></li>
+                        <li><a href="#">解决方案</a>
+                            <span class="indicator">&gt;</span>
+                            <ul>
+                                <li><a href="#" style="padding-left:40px">商务服务</a>
+                                    <span class="indicator">&gt;</span>
+                                    <ul>
+                                        <li><a href="#" style="padding-left:60px">商务与法规</a></li>
+                                        <li><a href="#" style="padding-left:60px">托管服务</a></li>
+                                        <li><a href="#" style="padding-left:60px">运营服务</a></li>
+                                        <!-- <li class="hide-in-horizontal"><a href="#">其它</a>
+                                            <ul>
+                                                <li><a href="#">其它-1</a></li>
+                                                <li><a href="#">其它-2</a></li>
+                                                <li><a href="#">其它-3</a></li>
+                                                <li><a href="#">其它-4</a></li>
+                                            </ul>
+                                            <span class="indicator">&gt;</span>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="text-danger">品牌专区</a></li>
+                        <li><a class="text-danger">合作伙伴</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--collpase  -->
+            <div class="collpase">
+                <div class="collpasePanel">
+                    <div id="panelOuter" class="flag">
+                        <script type="text/javascript">
+                            document.write(document.getElementById('panelFlag').innerHTML);
+                            var topbar;
+                            $(function () {
+                                topbar = $('#panelFlag').header_panel({});
+                                var navbar = $('#panelOuter').header_panel({});
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="swiper-container tabPane" style="overflow:hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <a href="javascript:;">
+                            <div style="margin: 0 auto; display: flex; align-items: center; justify-content: space-between; background: url('./images/home/banner1.png') no-repeat left top / 100%">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <a href="javascript:;">
+                            <div style="margin: 0 auto; display: flex; align-items: center; justify-content: space-between; background: url('./images/home/banner1.png') no-repeat left top/ 100%;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <a href="javascript:;">
+                            <div style="margin: 0 auto; display: flex; align-items: center; justify-content: space-between; background: url('./images/home/banner1.png') no-repeat left top/ 100%;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination paginationCircle"></div>
+            </div>
+            <!-- instruduction about solution -->
+            <ul class="desPro">
+                <li class="describeArea">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/banner1.png"
+                        alt="">
+                    <span>优选云方案</span>
+                </li>
+                <li class="describeArea">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/banner1.png"
+                        alt="">
+                    <span>优选云方案</span>
+                </li>
+                <li class="describeArea">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/banner2.png"
+                        alt="">
+                    <span>优选云方案</span>
+                </li>
+                <li class="describeArea">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/banner3.png"
+                        alt="">
+                    <span>优选云方案</span>
+                </li>
+        </div>
+        <!-- hotSolution -->
+        <div class="hotSolution">
+            <div class="title">热门解决方案</div>
+            <div class="underline"></div>
+            <div class="section-main-content">
+                <div class="store-content">
+                    <ul class="main-hotcase-list">
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/2(1).png">
+                                <div class="text-intro">
+                                    <p><span>BitTitan Migration</span> MigrationWiz
+                                        &#x63D0;&#x4F9B;&#x5E7F;&#x6CDB;&#x7684;&#x8FC1;&#x79FB;&#x9009;&#x9879;&#x548C;&#x529F;&#x80FD;&#x7EC4;&#x5408;&#xFF0C;&#x662F;&#x5E02;&#x573A;&#x4E0A;&#x9996;&#x5C48;&#x4E00;&#x6307;&#x7684;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x4EA7;&#x54C1;&#x3002;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/4(1).png">
+                                <div class="text-intro">
+                                    <p><span>SkyAudit</span>
+                                        &#x57FA;&#x4E8E;&#x5B9E;&#x65F6;&#x8BB0;&#x5F55;&#x7CFB;&#x7EDF;&#x548C;&#x7528;&#x6237;&#x65E5;&#x5FD7;&#x7684;&#x5BA1;&#x8BA1;&#x7CFB;&#x7EDF;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/8(1).png">
+                                <div class="text-intro">
+                                    <p><span>Zerto</span>
+                                        Zerto&#x865A;&#x62DF;&#x590D;&#x5236;(ZVR)&#x4F7F;&#x4F01;&#x4E1A;&#x7EA7;&#x4E91;&#x7AEF;&#x707E;&#x96BE;&#x6062;&#x590D;&#x53D8;&#x5F97;&#x65E2;&#x7B80;&#x5355;&#x53C8;&#x6613;&#x4E8E;&#x6269;&#x5C55;&#x3002;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/7(1).png">
+                                <div class="text-intro">
+                                    <p><span>&#x542C;&#x4E91;</span>
+                                        &#x542C;&#x4E91;&#x4E13;&#x6CE8;&#x4E8E;&#x5E94;&#x7528;&#x6027;&#x80FD;&#x7BA1;&#x7406;&#xFF08;APM&#xFF09;&#xFF0C;&#x62E5;&#x6709;&#x542C;&#x4E91;App&#x3001;&#x542C;&#x4E91;Network&#x7B49;&#x91CD;&#x8981;&#x4EA7;&#x54C1;&#x7EBF;&#x3002;</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/6(1).png">
+                                <div class="text-intro">
+                                    <p><span>AP Elements FLY</span> AP Elements
+                                        FLY&#x662F;&#x76EE;&#x524D;&#x5E02;&#x573A;&#x4E0A;&#x9886;&#x5148;&#x7684;Office
+                                        365 &#x8FC1;&#x79FB;&#x5DE5;&#x5177;&#x4E4B;&#x4E00;.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">
+                                <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/3(1).png">
+                                <div class="text-intro">
+                                    <p><span>Safein</span> Safein
+                                        &#x57FA;&#x4E8E;&#x4EFF;&#x771F;&#x6280;&#x672F;&#xFF0C;&#x5F00;&#x521B;&#x4E86;&#x5168;&#x65B0;&#x7684;&#x7F51;&#x7EDC;&#x6781;&#x901F;&#x79BB;&#x7EBF;&#x65E0;&#x635F;&#x4E91;&#x8BCA;&#x7597;&#x65B9;&#x6CD5;&#x53CA;&#x670D;&#x52A1;&#x3002;</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- industrySolution -->
+        <div class="industrySolution">
+            <div class="title">行业解决方案</div>
+            <div class="underline"></div>
+            <div class="swiper-container tabSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="eachSolution clearfix">
+                            <div class="eachSolutionPic">
+                                <img src="https://bcssstorage.blob.core.chinacloudapi.cn/resource/0000114.png" alt="">
+                            </div>
+                            <ul class="eachSolutionDes">
+                                <li>BitTitan Migration</li>
+                                <li>MigrationWiz 提供广泛的迁移选项和功能组合，是市场上首屈一指的数据迁移产品。</li>
+                            </ul>
+                        </div>
+                        <div class="eachSolution clearfix">
+                            <div class="eachSolutionPic">
+                                <img src="https://bcssstorage.blob.core.chinacloudapi.cn/resource/0000114.png" alt="">
+                            </div>
+                            <ul class="eachSolutionDes">
+                                <li>BitTitan Migration</li>
+                                <li>MigrationWiz 提供广泛的迁移选项和功能组合，是市场上首屈一指的数据迁移产品。</li>
+                            </ul>
+                        </div>
+                        <div class="eachSolution clearfix">
+                            <div class="eachSolutionPic">
+                                <img src="https://bcssstorage.blob.core.chinacloudapi.cn/resource/0000114.png" alt="">
+                            </div>
+                            <ul class="eachSolutionDes">
+                                <li>BitTitan Migration</li>
+                                <li>MigrationWiz 提供广泛的迁移选项和功能组合，是市场上首屈一指的数据迁移产品。</li>
+                            </ul>
+                        </div>
+                        <div class="eachSolution clearfix">
+                            <div class="eachSolutionPic">
+                                <img src="https://bcssstorage.blob.core.chinacloudapi.cn/resource/0000114.png" alt="">
+                            </div>
+                            <ul class="eachSolutionDes">
+                                <li>BitTitan Migration</li>
+                                <li>MigrationWiz 提供广泛的迁移选项和功能组合，是市场上首屈一指的数据迁移产品。</li>
+                            </ul>
+                        </div>
+                        <div class="eachSolution clearfix">
+                            <div class="eachSolutionPic">
+                                <img src="https://bcssstorage.blob.core.chinacloudapi.cn/resource/0000114.png" alt="">
+                            </div>
+                            <ul class="eachSolutionDes">
+                                <li>BitTitan Migration</li>
+                                <li>MigrationWiz 提供广泛的迁移选项和功能组合，是市场上首屈一指的数据迁移产品。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eachSolution">1</div>
+                        <div class="eachSolution">2</div>
+                        <div class="eachSolution">3</div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- News -->
+        <div class="news">
+            <div class="title">新闻动态</div>
+            <div class="underline"></div>
+            <div class="allNews">
+                <div class="swiper-container tabNews">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/resource/clic.jpg" alt="">
+                            <div class="newsArea">
+                                <div class="title">
+                                    <span>[最新]</span>
+                                    <span>云技术私享会</span>
+                                </div>
+                                <div class="content">
+                                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/resource/clic.jpg" alt="">
+                            <div class="newsArea">
+                                <div class="title">
+                                    <span>[最新]</span>
+                                    <span>云技术私享会</span>
+                                </div>
+                                <div class="content">
+                                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/resource/clic.jpg" alt="">
+                            <div class="newsArea">
+                                <div class="title">
+                                    <span>[最新]</span>
+                                    <span>云技术私享会</span>
+                                </div>
+                                <div class="content">
+                                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础云服务的发展之路
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- news list -->
+            <div class="newsList">
+                <div class="title clearfix">
+                    <div class="point"></div>
+                    <div class="titleDes">什么是基因测序，为什么要跑在云上</div>
+                    <div class="date">9-11</div>
+                </div>
+                <div class="content">
+                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础与您共同探讨...
+                </div>
+            </div>
+            <div class="newsList">
+                <div class="title clearfix">
+                    <div class="point"></div>
+                    <div class="titleDes">什么是基因测序，为什么要跑在云上</div>
+                    <div class="date">9-11</div>
+                </div>
+                <div class="content">
+                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础与您共同探讨...
+                </div>
+            </div>
+            <div class="newsList">
+                <div class="title clearfix">
+                    <div class="point"></div>
+                    <div class="titleDes">什么是基因测序，为什么要跑在云上</div>
+                    <div class="date">9-11</div>
+                </div>
+                <div class="content">
+                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础与您共同探讨...
+                </div>
+            </div>
+            <div class="newsList">
+                <div class="title clearfix">
+                    <div class="point"></div>
+                    <div class="titleDes">什么是基因测序，为什么要跑在云上</div>
+                    <div class="date">9-11</div>
+                </div>
+                <div class="content">
+                    汇聚华为云基础云服务的资深专家，分享多年技术研发思考和项目实践经验，与您共同探讨基础与您共同探讨...
+                </div>
+            </div>
+            <div class="searchMore">查看更多</div>
+        </div>
+        <!-- partner -->
+        <div class="partner">
+            <div class="title">合作伙伴</div>
+            <div class="underline"></div>
+            <ul class="partnerWrap">
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+                <li class="partnerPic">
+                    <img src="https://bluestorestoragetest.blob.core.chinacloudapi.cn/images/Bcss/storeHomePage/pic2.png"
+                        alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="list">
+                <div class="listTitle">
+                    蓝云服务
+                </div>
+                <div class="listUl">
+                    <li>
+                        <a href="http://www.21vbluecloud.com/services/achievement/">蓝云的成就</a>
+                    </li>
+                    <li class="example">
+                        <a href="http://www.21vbluecloud.com/services/casestudy/">成功案例</a>
+                    </li>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listTitle">
+                    资讯中心
+                </div>
+                <div class="listUl">
+                    <li>
+                        <a href="http://www.21vbluecloud.com/services/mediacenter/opinions/">专家视点</a>
+                    </li>
+                    <li class="sameWork">
+                        <a href="http://www.21vbluecloud.com/services/mediacenter/insight/">行业观察</a>
+                    </li>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listTitle">
+                    运营的云产品
+                </div>
+                <div class="listUl">
+                    <li>
+                        <a href="http://www.21vbluecloud.com/azure/">Microsoft Azure</a>
+                    </li>
+                    <li class="office">
+                        <a href="http://www.21vbluecloud.com/office365/">Office 365</a>
+                    </li>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listTitle">
+                    云应用
+                </div>
+                <div class="listUl">
+                    <li>
+                        <a href="https://abus.21vbluecloud.com/">ABUS</a>
+                    </li>
+                    <li class="solution">
+                        <a href="https://bcss.chinacloudsites.cn/">Solution Store</a>
+                    </li>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listTitle">
+                    蓝云社区中心
+                </div>
+                <div class="listUl">
+                    <li>
+                        <a href="http://www.21vbluecloud.com/bluetalk/">BLUETALK</a>
+                    </li>
+                    <li class="conmmonQue">
+                        <a href="http://www.21vbluecloud.com/communities/FQA.html">常见问题</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <!-- pageBottom -->
+        <div class="pageBottom">
+            <div class="enCompanyName">Copyright 2010. 21Vianet Group, Inc. All Rights Reserved.</div>
+            <div class="cnCompanyName">上海蓝云网络科技有限公司 Shanghai Blue Cloud Technology Co.,Ltd</div>
+        </div>
+        <!-- backTop and shoppingCart -->
+        <ul class="sidebar-list">
+            <li class="cart">
+                <img src="./images/solution/gouwuche.png" alt="">
+                <span class="count">1</span>
+            </li>
+            <li class="back-top f-transition">
+                <img src="./images/solution/zhiding.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./lib/js/swiper.min.js"></script>
+    <script src="./js/public/collpase-panel.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/public/backTop_shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var swiperes = new Swiper('.tabPane', { //banner-swiper
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var tabSwiper = new Swiper('.tabSwiper', { //industry solutions
+            // spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        var tabNews = new Swiper('.tabNews', { //news
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        $(function () {
+            $(".navbar-toggle").on("click", function () { //折叠面板
+                if ($(".collpase").height() != 0)
+                    $(".collpase").animate({ height: "" }, "normal");
+                else
+                    $(".collpase").animate({ height: "450px" }, "normal");
+            });
+
+            $("#dropMenuEvent").on("click", function () { //个人中心
+                $(".dropdownMenu").toggleClass("hidden");
+            });
+        })
+    </script>
+</body>
+
+</html>

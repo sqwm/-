@@ -1,0 +1,32 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.register-wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-size: 0.26rem;
+}
+.register-input-container li:not(:last-child) {
+    margin-bottom: 0.42rem;
+}
+.register-input-container input{
+    display: block;
+    width: 100%;
+    height: 0.72rem;
+    border: 0.01rem solid #efefef;
+    padding-left: 0.1rem;
+}
+.btn-register{
+    margin-top: 0.4rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 0.71rem;
+    line-height: 0.71rem;
+    background: #009EFF;
+    color: #fff;
+    text-decoration: none;
+}

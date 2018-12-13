@@ -1,0 +1,282 @@
+.collpase {
+  position: absolute;
+  width: 86%;
+  height: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.collpase .body {
+  padding: 0px 10px;
+  position: relative;
+  padding-left: 220px;
+}
+
+.collpasePanel {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .collpase .body {
+    padding: 0px;
+  }
+}
+
+.flag {
+  font-size: 14px;
+  position: relative;
+  color: #222;
+  z-index: 10;
+  background: #2e2e2e;
+}
+
+.flag .panelWrapper > ul {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.flag .panelWrapper > ul .inputBar {
+  height: 50px;
+  position: relative;
+}
+
+.flag .panelWrapper > ul .inputBar input {
+  width: 94%;
+  margin: 8px auto;
+  display: block;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  border: 1px solid #979797;
+  padding-left: 10px;
+  color: #979797;
+}
+
+.flag .panelWrapper > ul .inputBar ::-webkit-input-placeholder {
+  color: #979797;
+}
+
+.flag .panelWrapper > ul .inputBar :-moz-placeholder {
+  color: #979797;
+}
+
+.flag .panelWrapper > ul .inputBar ::-moz-placeholder {
+  color: #979797;
+}
+
+.flag .panelWrapper > ul .inputBar :-ms-input-placeholder {
+  color: #979797;
+}
+
+.flag .panelWrapper > ul .inputBar .search {
+  width: 4%;
+  height: 100%;
+  position: absolute;
+  right: 30px;
+  top: -1%;
+}
+
+.flag .panelWrapper > ul .inputBar .search img {
+  width: 20px;
+}
+
+.flag .panelWrapper > ul.pull-right {
+  float: none !important;
+}
+
+.flag ul {
+  font-family: MicrosoftYaHei;
+  list-style: none;
+  cursor: pointer;
+}
+
+.flag ul > li {
+  line-height: 36px;
+  min-width: 140px;
+  position: relative;
+}
+
+.flag ul > li > a {
+  padding: 0 20px;
+}
+
+.flag ul > li span.indicator {
+  position: absolute;
+  color: #bababa;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  padding-right: 6px;
+}
+
+.flag li > ul {
+  display: none;
+  border-top: 1px solid #444444;
+}
+
+.flag li > ul li, .flag li > ul ul {
+  background: #3b3b3b;
+}
+
+.flag li > ul li a, .flag li > ul ul a {
+  color: #8d8f91 !important;
+}
+
+.flag li > ul > li {
+  float: none;
+  position: relative;
+  min-width: 140px;
+}
+
+.flag .panelBorder > ul {
+  border: 1px solid #444444;
+}
+
+.flag .panelBorder.panelLine li {
+  border-bottom: 1px solid #444444;
+}
+
+.flag .panelBorder.panelLine li:last-child {
+  border-bottom: none;
+}
+
+.flag li.active > ul {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .flag .hide-in-mobile {
+    display: none;
+  }
+}
+
+.flag .show-in-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .flag .show-in-mobile {
+    display: block;
+  }
+}
+
+.flag .show-in-horizontal {
+  display: none;
+}
+
+.flag.horizontal {
+  width: 100%;
+  min-height: 41px;
+  border-bottom: 1px solid #eee;
+  clear: both;
+  z-index: 999;
+}
+
+.flag.horizontal ul {
+  padding: 0 !important;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.flag.horizontal ul > li {
+  line-height: 40px;
+  min-width: 140px;
+}
+
+.flag.horizontal ul > li:hover {
+  background-color: #d8d8d84d;
+}
+
+.flag.horizontal .panelWrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1600px) {
+  .flag.horizontal .panelWrapper {
+    width: 1280px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .flag.horizontal .panelWrapper {
+    width: 1600px;
+  }
+}
+
+.flag.horizontal .panelWrapper > ul {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+.flag.horizontal .panelWrapper > ul > li {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  border-bottom: none;
+  min-width: auto;
+}
+
+.flag.horizontal .panelWrapper > ul > li > a {
+  padding: 10px 20px;
+}
+
+.flag.horizontal .panelWrapper > ul > li > ul {
+  float: none;
+  position: absolute;
+  left: 0;
+  border: 1px solid #eee;
+}
+
+.flag.horizontal .panelWrapper > ul > li > ul > li {
+  float: none;
+  width: 140px;
+}
+
+.flag.horizontal .panelWrapper > ul > li > ul > li ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 1px solid #eee;
+}
+
+.flag.horizontal .panelWrapper > ul.pull-right {
+  float: right !important;
+}
+
+.flag.horizontal .panelWrapper > ul.pull-right > li > ul {
+  right: 0;
+  left: auto;
+}
+
+.flag.horizontal .panelWrapper > ul.pull-right > li > ul > li ul {
+  left: -101%;
+}
+
+.flag.horizontal .panelBorder > ul {
+  border: none;
+  border-radius: 0;
+}
+
+.flag.horizontal .panelBorder.panelLine li {
+  border-bottom: none;
+}
+
+.flag.horizontal .panelBorder.panelLine li:last-child {
+  border-bottom: none;
+}
+
+.flag.horizontal .show-in-horizontal {
+  display: block !important;
+}
+
+.flag.horizontal .hide-in-horizontal {
+  display: none !important;
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.sidebar-list{
+  position: fixed;
+  right: 0.5rem;
+  bottom: 1rem;
+  z-index: 9999999;
+}
+.sidebar-list li{
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  margin-bottom: 0.1rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+  border-radius: 50%;
+}
+.sidebar-list .count {
+  position: absolute;
+  top: 0.13rem;
+  right: 0.12rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  border-radius: 50%;
+  font-size: 0.2rem;
+  color: #FF5A5A;
+  text-align: center;
+  border: 0.01rem solid #FF5A5A;
+  background: #fff;
+}
+.sidebar-list img {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0.1rem 0;
+  vertical-align: top;
+}

@@ -1,0 +1,115 @@
+.container-wrap .completeImage {
+  width: 0.73249rem;
+  height: 0.73249rem;
+  margin: 0.99619rem auto 0;
+}
+
+.container-wrap .completeImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-wrap .hasCompleted {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: MicrosoftYaHei;
+  font-size: 0.25393rem;
+  color: #333333;
+  display: block;
+  padding: 1px;
+  text-align: center;
+  margin-top: 0.34183rem;
+}
+
+.container-wrap .seekBar {
+  width: 100%;
+  height: 0.4981rem;
+  font-family: MicrosoftYaHei;
+  margin-top: 0.68366rem;
+}
+
+.container-wrap .seekBar .seekDetail {
+  width: 1.59195rem;
+  height: 100%;
+  text-align: center;
+  line-height: 0.4981rem;
+  background: #009eff;
+  color: #fff;
+  font-size: 0.25393rem;
+  float: left;
+  border-radius: 0.58599rem;
+  margin-left: 1.65055rem;
+}
+
+.container-wrap .seekBar .backHome {
+  width: 1.59195rem;
+  height: 100%;
+  text-align: center;
+  line-height: 0.4981rem;
+  background: #009eff;
+  color: #fff;
+  font-size: 0.25393rem;
+  float: left;
+  border-radius: 0.58599rem;
+  margin-left: 1.01572rem;
+}
+
+.container-wrap .seekBar .backHome a {
+  color: #fff;
+}
+
+.container-wrap .orderDetail {
+  width: 100%;
+  height: auto;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  margin-top: 0.91806rem;
+  padding-bottom: 1.99238rem;
+}
+
+.container-wrap .orderDetail .orderTitle {
+  font-size: 0.2637rem;
+  color: #333333;
+  position: relative;
+  width: 100%;
+  height: 0.48833rem;
+  line-height: 0.48833rem;
+  padding-left: 0.40043rem;
+}
+
+.container-wrap .orderDetail .orderTitle::before {
+  content: "";
+  width: 0.04883rem;
+  height: 35%;
+  background: #009eff;
+  position: absolute;
+  left: 3.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container-wrap .orderDetail .orderNumberBar {
+  width: 100%;
+  height: 0.71296rem;
+  line-height: 0.71296rem;
+  padding-left: 0.40043rem;
+  padding-right: 0.2344rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.2637rem;
+  color: #666666;
+}
+
+.container-wrap .orderDetail .orderNumberBar .orderNumberName {
+  float: left;
+}
+
+.container-wrap .orderDetail .orderNumberBar .orderNumber {
+  float: right;
+}
+
+.container-wrap .orderDetail .orderNumberBar:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
